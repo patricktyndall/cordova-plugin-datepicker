@@ -1,0 +1,27 @@
+{
+  "name": "pw-cordova-plugin-datepicker",
+  "version": "0.9.2",
+  "description": "Cordova DatePicker Plugin",
+  "cordova": {
+    "id": "pw-cordova-plugin-datepicker",
+    "platforms": [
+      "ios",
+      "android",
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patricktyndall/cordova-plugin-datepicker.git"
+  },
+  "keywords": [
+    "cordova",
+    "datepicker",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-windows"
+  ],
+  "author": "PW",
+  "license": "Apache 2.0"
+}
