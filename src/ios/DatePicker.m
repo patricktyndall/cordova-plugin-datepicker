@@ -210,8 +210,8 @@
   NSDateFormatter *formatter = [self createISODateFormatter: DATETIME_FORMAT timezone:[NSTimeZone defaultTimeZone]];
   NSString *mode = [options objectForKey:@"mode"];
   NSString *dateString = [options objectForKey:@"date"];
-  BOOL allowOldDates = ([[options objectForKey:@"allowOldDates"] intValue] == 0) ? NO : YES;
-  BOOL allowFutureDates = ([[options objectForKey:@"allowFutureDates"] intValue] == 0) ? NO : YES;
+  BOOL allowOldDates = NO;
+  BOOL allowFutureDates = NO;
   NSString *minDateString = [options objectForKey:@"minDate"];
   NSString *maxDateString = [options objectForKey:@"maxDate"];
   NSString *minuteIntervalString = [options objectForKey:@"minuteInterval"];
