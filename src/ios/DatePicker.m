@@ -38,7 +38,7 @@
   NSMutableDictionary *options = [command argumentAtIndex:0];
   //if (isIPhone) {
     printf("Hello World 0");
-    NSLog("Hello World 0")
+    NSLog("Hello World 0");
     [self showForPhone: options];
   //} else {
  //   [self showForPad: options];
@@ -47,7 +47,7 @@
 
 - (BOOL)showForPhone:(NSMutableDictionary *)options {
     printf("Hello World 1");
-    NSLog("Hello World 1")
+    NSLog("Hello World 1");
 
   if(!self.datePickerContainer){
     [[NSBundle mainBundle] loadNibNamed:@"DatePicker" owner:self options:nil];
@@ -78,7 +78,7 @@
   NSLog(@"%.2f", height);
   
     printf("Hello World 3");
-    NSLog("Hello World 3")
+    NSLog("Hello World 3");
 
   self.datePickerContainer.frame = CGRectMake(0, 0, width, height);
   
@@ -115,7 +115,7 @@
 - (void)hide {
   //if (isIPhone) {
     printf("Hello World 4");
-    NSLog("Hello World 4")
+    NSLog("Hello World 4");
   
     CGRect frame = CGRectOffset(self.datePickerComponentsContainer.frame,
                                 0,
@@ -230,23 +230,23 @@
   NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:[options objectForKey:@"locale"]];
 
     printf("Hello World 5");
-    NSLog("Hello World 5")
+    NSLog("Hello World 5");
   
   if (allowOldDates) {
     self.datePicker.minimumDate = nil;
     printf("Hello World 6");
-    NSLog("Hello World 6")
+    NSLog("Hello World 6");
   }
   else {
     self.datePicker.minimumDate = [NSDate date];
     printf("Hello World 7");
-    NSLog("Hello World 7")
+    NSLog("Hello World 7");
   }
   
   if(minDateString && minDateString.length > 0){
     self.datePicker.minimumDate = [formatter dateFromString:minDateString];
     printf("Hello World 8");
-    NSLog("Hello World 8")
+    NSLog("Hello World 8");
   }
   
   if (allowFutureDates) {
