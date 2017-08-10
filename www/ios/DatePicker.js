@@ -80,8 +80,8 @@ DatePicker.prototype.show = function(options, cb) {
     var defaults = {
         mode: 'date',
         date: new Date(),
-        allowOldDates: true,
-        allowFutureDates: true,
+        allowOldDates: false,
+        allowFutureDates: false,
         minDate: '',
         maxDate: '',
         doneButtonLabel: 'Done',
